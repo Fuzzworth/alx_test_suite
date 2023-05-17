@@ -56,18 +56,20 @@ Do not use!!!
 git commit -m "message"
 ```
 
+Remove "#" from start of line to uncomment line
+
 ```
-# Title: Summary, imperative, start upper case, don't end with a period
+Title: Summary, imperative, start upper case, don't end with a period
 # No more than 50 chars. #### 50 chars is here:  #
 
 # Remember blank line between title and body.
 
-# Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).
+Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).
 # Wrap at 72 chars. ################################## which is here:  #
 
 # At the end: Include Co-authored-by for all contributors. 
 # Include at least one empty line before it. Format: 
-# Co-authored-by: name <user@users.noreply.github.com>
+Co-authored-by: name <user@users.noreply.github.com>
 #
 # How to Write a Git Commit Message:
 # https://chris.beams.io/posts/git-commit/
