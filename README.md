@@ -98,3 +98,5 @@ git push --set-upstream enhancement/<local_branch_name>
 ```
 
 ### Step 5: Compare and Pull Request to merge your changes to main on this github repo
+
+Currently Three Aprovals are required to merge a branch in a pull request to main... God Speed everyone!
