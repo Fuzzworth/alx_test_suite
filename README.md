@@ -33,7 +33,7 @@ please open an issue on the repository's issue tracker. We appreciate your
 contributions in making this repository a valuable resource for students engaged
 in pair programming projects.
 
-=======
+---
 
 ## contact any of the collaborators to be given access I guess
 
