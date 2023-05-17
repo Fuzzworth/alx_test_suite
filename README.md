@@ -45,7 +45,7 @@ git clone https://github.com/Fuzzworth/alx_test_suite.git
 then,
 
 ```
-cd alx_test_suite
+cd alx_test_suite/simple_shell_project
 ```
 
 ### Step 2: Create a local branch
@@ -61,9 +61,9 @@ git branch enhancement/<local_branch_name>
 git checkout enhancement/<local_branch_name>
 ```
 
-### Step 3: Code your test
+### Step 3: Code your test code to simple_shell_project
 
-Test Format is as below
+Test Format is as below example
 
 ```
 ######### Test Description
