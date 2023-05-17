@@ -100,3 +100,15 @@ git push --set-upstream enhancement/<local_branch_name>
 ### Step 5: Compare and Pull Request to merge your changes to main on this github repo
 
 Currently Three Aprovals are required to merge a branch in a pull request to main... God Speed everyone!
+
+#### Before Approving a Pull request check to see it dosent break our hard work
+
+```
+git fetch origin <remote_branch>
+git checkout <remote_branch>
+./simple_shell_tests.sh
+```
+
+If all is well Approve the request but if it sint leave a comment... links below
+
+- [Youtube Pull Requests](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
