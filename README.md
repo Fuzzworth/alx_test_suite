@@ -1,5 +1,4 @@
 # ALX TEST SUITE
----
 
 This repository contains a collection of test cases created by students
 for the pair projects. These test cases aim to ensure the functionality,
@@ -33,7 +32,7 @@ please open an issue on the repository's issue tracker. We appreciate your
 contributions in making this repository a valuable resource for students engaged
 in pair programming projects.
 
-=======
+---
 
 ## contact any of the collaborators to be given access I guess
 
