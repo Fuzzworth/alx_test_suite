@@ -85,7 +85,7 @@ run_check ""echo" "
 command1=$(echo "`#Your test`" | ./hsh 2>&1)
 
 # 2- store sh ouput (out and err) in command2
-command2=$(echo "`#Your test`" | ./hsh 2>&1)
+command2=$(echo "`#Your test`" | sh 2>&1)
 
 # 3- sote command1 in 1a2b3c4d5e6f7g8h9i file
 echo "$command1" > 1a2b3c4d5e6f7g8h9i
