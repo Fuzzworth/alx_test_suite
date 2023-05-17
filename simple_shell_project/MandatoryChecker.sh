@@ -128,6 +128,28 @@ echo "$command1" > 1a2b3c4d5e6f7g8h9i
 echo "$command2" > 1a2b3c4d5e6f7g8h9b
 run_check ""exit" "
 
+######### case 16
+command1=$(echo "" | ./hsh 2>&1)
+command2=$(echo "" | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""empty line" "
+
+######### case 17
+command1=$(echo "   " | ./hsh 2>&1)
+command2=$(echo "   " | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""spaces line" "
+
+######### case 15
+command1=$(echo "./RUNME" | ./hsh 2>&1)
+command2=$(echo "./RUNME" | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check "run exe in "./" cwd"
+
+rm ./RUNME
 #>>>> betty testing  <<<<<<
 
 #remove the hashs below to enable betty testing
