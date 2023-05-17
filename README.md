@@ -32,9 +32,7 @@ please open an issue on the repository's issue tracker. We appreciate your
 contributions in making this repository a valuable resource for students engaged
 in pair programming projects.
 
----
-
-## contact any of the collaborators to be given access I guess
+# Contact any of the collaborators to be given access I guess
 
 ## Tips to Collaborate:
 
@@ -63,7 +61,33 @@ git branch enhancement/<local_branch_name>
 git checkout enhancement/<local_branch_name>
 ```
 
-### Step 3: Code your solution and commit using the below template
+### Step 3: Code your test
+
+Test Format is as below
+
+```
+#########
+command1=$(echo "ls" | ./hsh 2>&1)
+command2=$(echo "ls" | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""ls""
+##########
+```
+
+First two lines
+
+```
+command1=$(echo "ls" | ./hsh 2>&1)
+command2=$(echo "ls" | sh 2>&1)
+```
+
+- command1 is for your simple shell
+- command2 is for the reference bourne shell
+
+*** DO NOT ALTER THE FUNCTION run_check ****
+
+## Step 4: Commit using the below template
 
 Follow instructions for template here: [Original post](https://gist.github.com/lisawolderiksen/a7b99d94c92c6671181611be1641c733)
 
@@ -127,13 +151,13 @@ Co-authored-by: name <user@users.noreply.github.com>
 #
 ```
 
-### Step 4: Push your branch
+### Step 5: Push your branch
 
 ```
 git push --set-upstream enhancement/<local_branch_name>
 ```
 
-### Step 5: Compare and Pull Request to merge your changes to main on this github repo
+### Step 6: Compare and Pull Request to merge your changes to main on this github repo
 
 Currently Three Aprovals are required to merge a branch in a pull request to main... God Speed everyone!
 
@@ -142,10 +166,11 @@ Currently Three Aprovals are required to merge a branch in a pull request to mai
 ```
 git fetch origin <remote_branch>
 git checkout <remote_branch>
-./simple_shell_tests.sh
+cp simple_shell_project/MandatoryChecker.sh <path to simple shell code on your local machine machine>
+./MandatoryChecker.sh
 ```
 
-If all is well Approve the request but if it sint leave a comment... links below
+If all is well Approve the request but if it is not Well leave a comment... links below
 
 - [Youtube Pull Requests](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
 - [Youtube Review Pull Request](https://www.youtube.com/watch?v=lSnbOtw4izI)
