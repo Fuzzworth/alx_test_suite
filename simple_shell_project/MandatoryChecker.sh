@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage : ./check.sh | less -r
-# copy this file inside your project folder and run ./check.sh | less -r
+# copy this file inside your project folder and run ./checker.sh | less -r
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 function run_check()
 {
@@ -22,30 +22,62 @@ function run_check()
     rm 1a2b3c4d5e6f7g8h9i 1a2b3c4d5e6f7g8h9b;
     echo "************************************"
 }
-#########
+######### case 1
 command1=$(echo "ls" | ./hsh 2>&1)
 command2=$(echo "ls" | sh 2>&1)
 echo "$command1" > 1a2b3c4d5e6f7g8h9i
 echo "$command2" > 1a2b3c4d5e6f7g8h9b
 run_check ""ls""
-##########
+
+######### case 2
 command1=$(echo "/bin/ls" | ./hsh 2>&1)
 command2=$(echo "/bin/ls" | sh 2>&1)
 echo "$command1" > 1a2b3c4d5e6f7g8h9i
 echo "$command2" > 1a2b3c4d5e6f7g8h9b
 run_check ""/bin/ls""
-##########
+
+######### case 3
 command1=$(echo "/bin/ls -l" | ./hsh 2>&1)
 command2=$(echo "/bin/ls -l" | sh 2>&1)
 echo "$command1" > 1a2b3c4d5e6f7g8h9i
 echo "$command2" > 1a2b3c4d5e6f7g8h9b
 run_check ""ls" with "-l" option"
-##########
+
+######### case 4
 command1=$(echo "/bin/ls -l /tmp" | ./hsh 2>&1)
 command2=$(echo "/bin/ls -l /tmp" | sh 2>&1)
 echo "$command1" > 1a2b3c4d5e6f7g8h9i
 echo "$command2" > 1a2b3c4d5e6f7g8h9b
 run_check ""ls" with "-l" and "/tmp" option"
+
+######### case 5
+command1=$(echo "    /bin/ls" | ./hsh 2>&1)
+command2=$(echo "    /bin/ls" | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""ls" with "spaces" before"
+
+######### case 6
+command1=$(echo "/bin/ls   " | ./hsh 2>&1)
+command2=$(echo "/bin/ls   " | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""/bin/ls" with "spaces" after"
+
+######### case 7
+command1=$(echo "   /bin/ls   " | ./hsh 2>&1)
+command2=$(echo "   /bin/ls   " | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""/bin/ls" with "spaces" before and after"
+
+######### case 8
+command1=$(echo "echo hello world" | ./hsh 2>&1)
+command2=$(echo "echo hello world" | sh 2>&1)
+echo "$command1" > 1a2b3c4d5e6f7g8h9i
+echo "$command2" > 1a2b3c4d5e6f7g8h9b
+run_check ""echo" "
+
 #####################################
 # To add your own tests
 #####################################
@@ -64,7 +96,9 @@ echo "$command2" > 1a2b3c4d5e6f7g8h9b
 # 5- Call run_check and pass comment to it
 run_check " `#Test comment` "
 
-### remove hash to enable betty testing
+#>>>> betty testing  <<<<<<
+
+#remove the hashs to enable betty testing
 #echo "-->" Check documentation
 #betty-doc *.c *.h
 #echo "-->" Check style
