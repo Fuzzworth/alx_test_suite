@@ -114,3 +114,4 @@ git checkout <remote_branch>
 If all is well Approve the request but if it sint leave a comment... links below
 
 - [Youtube Pull Requests](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
+- [Youtube Review Pull Request](https://www.youtube.com/watch?v=lSnbOtw4izI)
