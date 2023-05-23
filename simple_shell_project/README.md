@@ -1,4 +1,4 @@
-# Simple Shell Tests Go HERE!!!
+# Simple Shell Tests Go in the Madatory Checker!!!
 
 # To add your own tests
 
