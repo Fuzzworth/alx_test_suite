@@ -4,17 +4,25 @@
 
 There are 5 folders 1 per task
 
+Change directory into the task you want to check
+
 ```
-cd <Task Folder>
+cd 1. Simple shell 0.1
 ```
 
-then
+make it executable
+
+```
+chmod u+x *
+```
+
+then copy the compiled shell into the same directory
 
 ```
 cp <your compiled shell> .
 ```
 
-then
+then run a check based on a test
 
 ```
 ./checker.bash ./hsh <test file> 
