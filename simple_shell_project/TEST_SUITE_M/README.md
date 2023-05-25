@@ -1,4 +1,4 @@
-# Credit to Merlix Gikunju <gmerlix@yahoo.com> for sharing
+# Credit to Merlix Gikunju for sharing
 
 ## How to use
 
