@@ -132,7 +132,7 @@ Co-authored-by: name <user@users.noreply.github.com>
 #### Step 5: Push your branch
 
 ```
-git push --set-upstream enhancement/<local_branch_name>
+git push --set-upstream origin enhancement/<local_branch_name>
 ```
 
 #### Step 6: Compare and Pull Request to merge your changes to main on this Github repo
