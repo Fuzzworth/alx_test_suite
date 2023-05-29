@@ -18,13 +18,13 @@
 #### copy & paste each highlighted command to your terminal and press `enter ↲` one after the other.
 
 1. `git clone` clone this repo into your simple_shell directory
-2. `cd TEST_SUITE` - Navigate to TEST_SUITE
+2. `cd simple_shell_project` - Navigate to TEST_SUITE
 3. `chmod +x checker.bash runchecker.bash` - make them executable
 4. `mv runchecker.bash ../runchecker.bash` - move runchecker.bash to your simple_shell directory.
 5. `cd ..` - Navigate back to simple_shell
 6. Create a `.gitignore` file in your repo if you don't already have one and add these lines inside it
 ```gitignore
-TEST_SUITE
+simple_shell_project
 allowed_functions
 ```
 
