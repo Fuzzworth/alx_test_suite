@@ -15,7 +15,7 @@
 
 ## HOW TO USE
 
-### TODO: DOCS For Monty
+### TODO: DOCS For Monty Comming Soon
 
 #### copy & paste each highlighted command to your terminal and press `enter ↲` one after the other.
 
