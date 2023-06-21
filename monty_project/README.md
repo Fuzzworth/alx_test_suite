@@ -6,7 +6,7 @@ Each folder represents a task to check for you basically copy your compiled C bi
 
 ## How to use
 
-- Clone the repo  [https://github.com/Fuzzworth/alx_test_suite.git](ALX TEST SUITE)
+- Clone the repo [ALX TEST SUITE](https://github.com/Fuzzworth/alx_test_suite.git)
 - Copy the source file into the directory/task folder you want to test for in the monty_project directory
 - run the test 
 
