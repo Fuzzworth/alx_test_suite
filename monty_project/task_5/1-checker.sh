@@ -6,14 +6,10 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 # monty bytcode test case:
-montyBytes="push 0
-push 1
+montyBytes="push 1
 push 2
-  push 3
-                   pall    
-push 4
-    push 5    
-      push   6        
+push 3
+nop
 pall"
 
 # make test case file:
@@ -25,15 +21,7 @@ program_output=$(./monty testCase00)
 # Specify the expected result
 expected_result="3
 2
-1
-0
-6
-5
-4
-3
-2
-1
-0"
+1"
 
 # Compare the program's output with the expected result
 if [ "$program_output" == "$expected_result" ]; then
