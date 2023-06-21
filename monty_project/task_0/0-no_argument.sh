@@ -12,10 +12,10 @@ montyBytes=""
 echo "$montyBytes" > testCase00
 
 # Run the program and capture its output
-program_output=$(./monty)
+program_output=$(./monty 2>&1 >/dev/null)
 
 # Specify the expected result
-expected_result="Usage: monty file"
+expected_result="USAGE: monty file"
 
 # Compare the program's output with the expected result
 if [ "$program_output" == "$expected_result" ]; then

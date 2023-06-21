@@ -26,7 +26,7 @@ pall This is the end of our program. Monty is awesome!"
 echo "$montyBytes" > testCase00
 
 # Run the program and capture its output
-program_output=$(./monty testCase00 2>&1)
+program_output=$(./monty testCase00)
 
 # Specify the expected result
 expected_result="3

@@ -13,7 +13,7 @@ push a"
 echo "$montyBytes" > testCase00
 
 # Run the program and capture its output
-program_output=$(./monty testCase00 2>&1)
+program_output=$(./monty testCase00 2>&1 >/dev/null)
 
 # Specify the expected result
 expected_result="L2: usage: push integer"
