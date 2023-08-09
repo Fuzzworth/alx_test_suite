@@ -30,7 +30,7 @@
 8. Create a `.gitignore` file in your repo if you don't already have one and add these lines inside it
 
 ```gitignore
-TEST_SUITES
+TEST_SUITE
 allowed_functions
 runchecker.bash
 ```
