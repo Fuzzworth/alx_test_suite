@@ -9,26 +9,32 @@ ok_count=0
 total_commands=0
 
 target_directory="$1"
+numlen=${#1}
 
 while read -r command; do
-    directory=$(echo "$command" | awk '{print $NF}' | cut -d'/' -f3)
+	directory=$(echo "$command" | awk '{print $NF}' | cut -d'/' -f3)
+
+	if [ $numlen -gt 0 ];
+	then
+
+		if [[ ${directory:$numlen:1} != "." || $target_directory != ${directory:0:$numlen} ]];
+		then
+			continue
+		fi
+	fi
+
+	echo -e "${ORANGE}${command}${NC}"
+	output=$(eval "$command")
     
-    if [[ -n "$target_directory" && "$directory" != "$target_directory"* ]]; then
-        continue
-    fi
+	if [[ $output == "OK" ]]; then
+		echo -e "${GREEN}${output}${NC}"
+		((ok_count++))
+	else
+		echo "$output"
+	fi
     
-    echo -e "${ORANGE}${command}${NC}"
-    output=$(eval "$command")
-    
-    if [[ $output == "OK" ]]; then
-        echo -e "${GREEN}${output}${NC}"
-        ((ok_count++))
-    else
-        echo "$output"
-    fi
-    
-    echo
-    ((total_commands++))
+	echo
+	((total_commands++))
 done < "TEST_SUITE/command_list.txt"
 
 echo -e "${BLUE}Number of OK outputs: ${ok_count}${NC}"
