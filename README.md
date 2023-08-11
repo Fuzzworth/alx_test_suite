@@ -1,47 +1,25 @@
-# 0x16 ALX SIMPLE SHELL TEST SUITE
+# ALX TEST SUITE
 
 ## DESCRIPTION
 
-- This is a set of testing scripts for all simple shell tasks except betty and memory checks with valgrind.
+- This is a set of testing scripts(edge case tests) for ALX SE pair programming projects.
+
+> - [TDD_project](https://github.com/Fuzzworth/alx_test_suite/tree/main/TDD_project)
+> - [monty_project](https://github.com/Fuzzworth/alx_test_suite/tree/main/monty_project)
+> - [simple_shell_project](https://github.com/Fuzzworth/alx_test_suite/tree/main/simple_shell_project)
+
 - This suite is tested on Ubuntu 20.04 WSL.
 
 ## FEATURES
 
 - Runs a checker on your compiled code and displays `OK` if you have the expected output.
 - Displays command to be executed before it starts.
-- Displays number of `OK` outputs at the end and total number of commands run.
+- Displays number of `OK` outputs at the end and total number of commands ran.
 - Check only specific tasks instead of whole suite at once.
 
-*DISCLAIMER: Currently cannot check for valgrind errors so you must do that manually. If you get OK and also no memory leaks then expect GREEN on the Intranet. If you get OK and you have memory errors you will get RED in the intranet.*
+## USAGE
 
-## HOW TO USE
-
-### TODO: DOCS For Monty Comming Soon
-
-#### copy & paste each highlighted command to your terminal and press `enter ↲` one after the other
-
-1. `git clone https://github.com/Fuzzworth/alx_test_suite.git` clone this repo into your simple_shell directory
-2. `mv alx_test_suite/simple_shell_project TEST_SUITE` - Move the simple_shell_project directory to your simple_shell directory, renaming as TEST_SUITE
-3. `cd TEST_SUITE` - Navigate into the TEST_SUITE directory
-4. `chmod +x checker.bash runchecker.bash` - make them executable
-5. `mv runchecker.bash ../runchecker.bash` - move runchecker.bash to your simple_shell directory.
-6. `cd ..` - Navigate back to simple_shell.
-7. `rm -rf alx_test_suite` - Remove the residue files.
-8. Create a `.gitignore` file in your repo if you don't already have one and add these lines inside it
-
-```gitignore
-TEST_SUITE
-allowed_functions
-runchecker.bash
-```
-
-8. `./runchecker.bash` - to run the whole suite from task 1 - 16 at once.
-
---- OPTIONS ---
-
-`./runchecker.bash #`
-
-replace # with a number from 1- 16 to only run checks from a specific task e.g. to check task 3 only, do `./runchecker.bash 3`
+### TODO: DOCS For TDD_project Comming Soon
 
 ## FEEDBACK AND ISSUES
 
@@ -53,12 +31,6 @@ We welcome any feedback, suggestions, or bug reports related to the test cases i
 
 ```bash
 git clone https://github.com/Fuzzworth/alx_test_suite.git
-```
-
-then,
-
-```bash
-cd alx_test_suite/simple_shell_project
 ```
 
 #### Step 2: Create a local branch
@@ -76,8 +48,7 @@ git checkout enhancement/<local_branch_name>
 
 #### Step 3: Make your updates
 
-> - DO NOT MODIFY ANY OF THE FILES IN THE DIRECTORIES NAMED FROM 1 - 16
-> - DO NOT MODIFY checker.bash
+> - DO NOT MODIFY ANY OF THE FILES IN THE DIRECTORIES
 
 #### Step 4: Commit using the below template
 
@@ -152,7 +123,7 @@ git push --set-upstream origin enhancement/<local_branch_name>
 
 #### Step 6: Compare and Pull Request to merge your changes to main on this Github repo
 
-Currently Three Approvals are required to merge a branch in a pull request to main... God Speed everyone!
+Currently Three Approvals are required to merge a branch in a pull request to main... God Speed and happy coding everyone!
 
 **Before Approving a Pull request check to see it doesn't break our hard work.**
 
