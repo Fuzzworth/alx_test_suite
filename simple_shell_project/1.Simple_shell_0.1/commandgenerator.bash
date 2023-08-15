@@ -14,7 +14,7 @@ for dir in $directories; do
         # Iterate over the script files in each directory
         for script in "$dir"/*.bash; do
             # Exclude "checker.bash" from the command list
-            if [ "$(basename "$script")" != "checker.bash" ] && [ "$(basename "$script")" != "commandgenerator.bash" ] && [ "$(basename "$script")" != "runchecker.bash" ]; then
+            if [ "$(basename "$script")" != "checker.bash" ]; then
                 echo "./checker.bash ./hsh ./$(basename "$dir")/$(basename "$script")"
             fi
         done
