@@ -1,7 +1,7 @@
 #####   11.semicolon   #####
-./checker.bash ../hsh ././cmdfail_sep_cmd.bash
-./checker.bash ../hsh ././cmdfail_sep_cmdfail.bash
-./checker.bash ../hsh ././cmd_sep.bash
-./checker.bash ../hsh ././cmd_sep_cmd.bash
-./checker.bash ../hsh ././cmd_sep_cmd_no_space.bash
-./checker.bash ../hsh ././cmd_sep_cmd_sep_cmd.bash
+../checker.bash ../hsh ././cmdfail_sep_cmd.bash
+../checker.bash ../hsh ././cmdfail_sep_cmdfail.bash
+../checker.bash ../hsh ././cmd_sep.bash
+../checker.bash ../hsh ././cmd_sep_cmd.bash
+../checker.bash ../hsh ././cmd_sep_cmd_no_space.bash
+../checker.bash ../hsh ././cmd_sep_cmd_sep_cmd.bash
