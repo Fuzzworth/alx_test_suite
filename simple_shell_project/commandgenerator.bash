@@ -15,7 +15,7 @@ for dir in $directories; do
         for script in "$dir"/*.bash; do
             # Exclude "checker.bash" from the command list
             if [ "$(basename "$script")" != "checker.bash" ]; then
-                echo "./TEST_SUITE/checker.bash ./hsh ./TEST_SUITE/$(basename "$dir")/$(basename "$script")"
+                echo "./checker.bash ./hsh ./$(basename "$dir")/$(basename "$script")"
             fi
         done
     fi
