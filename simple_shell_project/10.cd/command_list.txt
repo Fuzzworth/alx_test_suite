@@ -1,0 +1,10 @@
+#####   10.cd   #####
+./checker.bash ../hsh ././cd_dash.bash
+./checker.bash ../hsh ././cd_dash_change_oldpwd.bash
+./checker.bash ../hsh ././cd_dash_rm_oldpwd.bash
+./checker.bash ../hsh ././cd_no_arg.bash
+./checker.bash ../hsh ././cd_no_arg_change_home.bash
+./checker.bash ../hsh ././cd_no_arg_rm_home.bash
+./checker.bash ../hsh ././cd_no_permission.bash
+./checker.bash ../hsh ././cd_normal.bash
+./checker.bash ../hsh ././cd_not_existing_dir.bash

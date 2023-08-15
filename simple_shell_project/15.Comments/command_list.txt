@@ -1,0 +1,6 @@
+#####   15.Comments   #####
+./checker.bash ../hsh ././comment_after_cmd.bash
+./checker.bash ../hsh ././comment_after_cmd_print.bash
+./checker.bash ../hsh ././comment_after_cmd_print_no_space.bash
+./checker.bash ../hsh ././comment_after_cmd_print_space.bash
+./checker.bash ../hsh ././comment.bash

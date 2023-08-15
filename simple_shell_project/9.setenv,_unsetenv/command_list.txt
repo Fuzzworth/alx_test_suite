@@ -1,0 +1,8 @@
+#####   9.setenv,_unsetenv   #####
+./checker.bash ../hsh ././setenv.bash
+./checker.bash ../hsh ././setenv_existing_var.bash
+./checker.bash ../hsh ././setenv_no_param.bash
+./checker.bash ../hsh ././setenv_one_param.bash
+./checker.bash ../hsh ././unsetenv.bash
+./checker.bash ../hsh ././unsetenv_no_param.bash
+./checker.bash ../hsh ././unsetenv_not_existing_var.bash

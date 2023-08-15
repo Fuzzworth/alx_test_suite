@@ -1,0 +1,4 @@
+#####   5.Simple_shell_1.0   #####
+./checker.bash ../hsh ././env.bash
+./checker.bash ../hsh ././env_ignore_env.bash
+./checker.bash ../hsh ././env_one_var.bash

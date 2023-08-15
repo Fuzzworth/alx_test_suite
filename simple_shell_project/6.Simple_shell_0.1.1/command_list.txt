@@ -1,0 +1,4 @@
+#####   6.Simple_shell_0.1.1   #####
+./checker.bash ../hsh ././bin_ls.bash
+./checker.bash ../hsh ././bin_ls_large_input.bash
+./checker.bash ../hsh ././bin_ls_medium_input.bash

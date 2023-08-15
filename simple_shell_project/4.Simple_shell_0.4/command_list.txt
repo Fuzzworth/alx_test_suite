@@ -1,0 +1,3 @@
+#####   4.Simple_shell_0.4   #####
+./checker.bash ../hsh ././exit_no_arg_1.bash
+./checker.bash ../hsh ././exit_no_arg.bash

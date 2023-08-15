@@ -1,0 +1,4 @@
+#####   2.Simple_shell_0.2   #####
+./checker.bash ../hsh ././bin_ls_1_arg_1.bash
+./checker.bash ../hsh ././bin_ls_1_arg.bash
+./checker.bash ../hsh ././echo_1_arg.bash

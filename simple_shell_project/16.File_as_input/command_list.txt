@@ -1,0 +1,5 @@
+#####   16.File_as_input   #####
+./checker.bash ../hsh ././shell_with_empty_file.bash
+./checker.bash ../hsh ././shell_with_file_1.bash
+./checker.bash ../hsh ././shell_with_file.bash
+./checker.bash ../hsh ././shell_with_unknown_file.bash

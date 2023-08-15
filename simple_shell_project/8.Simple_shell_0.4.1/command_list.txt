@@ -1,0 +1,7 @@
+#####   8.Simple_shell_0.4.1   #####
+./checker.bash ../hsh ././exit_1000.bash
+./checker.bash ../hsh ././exit_neg_number.bash
+./checker.bash ../hsh ././exit_no_arg_1.bash
+./checker.bash ../hsh ././exit_no_arg.bash
+./checker.bash ../hsh ././exit_string.bash
+./checker.bash ../hsh ././exit_with_status.bash
