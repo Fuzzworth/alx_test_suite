@@ -35,7 +35,7 @@ while read -r command; do
     
 	echo
 	((total_commands++))
-done < "TEST_SUITE/command_list.txt"
+done < "./command_list.txt"
 
 echo -e "${BLUE}Number of OK outputs: ${ok_count}${NC}"
 echo -e "${BLUE}Total commands run: ${total_commands}${NC}"
