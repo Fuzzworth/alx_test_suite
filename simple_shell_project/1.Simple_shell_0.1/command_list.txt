@@ -1,8 +1,8 @@
 #####   1.Simple_shell_0.1   #####
-./checker.bash ../hsh ././bin_ls_3_times.bash
-./checker.bash ../hsh ././bin_ls.bash
-./checker.bash ../hsh ././bin_ls_spaces.bash
-./checker.bash ../hsh ././empty_input_large.bash
-./checker.bash ../hsh ././empty_input_medium.bash
-./checker.bash ../hsh ././empty_input_small.bash
-./checker.bash ../hsh ././ls_in_current_dir.bash
+../checker.bash ../hsh ././bin_ls_3_times.bash
+../checker.bash ../hsh ././bin_ls.bash
+../checker.bash ../hsh ././bin_ls_spaces.bash
+../checker.bash ../hsh ././empty_input_large.bash
+../checker.bash ../hsh ././empty_input_medium.bash
+../checker.bash ../hsh ././empty_input_small.bash
+../checker.bash ../hsh ././ls_in_current_dir.bash

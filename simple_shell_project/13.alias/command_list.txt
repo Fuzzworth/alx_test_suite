@@ -1,9 +1,9 @@
 #####   13.alias   #####
-./checker.bash ../hsh ././alias_list.bash
-./checker.bash ../hsh ././alias_ls.bash
-./checker.bash ../hsh ././alias_ls_double.bash
-./checker.bash ../hsh ././alias_overwrite.bash
-./checker.bash ../hsh ././alias_several_and_display.bash
-./checker.bash ../hsh ././alias_several.bash
-./checker.bash ../hsh ././alias_several_override.bash
-./checker.bash ../hsh ././alias_specific.bash
+../checker.bash ../hsh ././alias_list.bash
+../checker.bash ../hsh ././alias_ls.bash
+../checker.bash ../hsh ././alias_ls_double.bash
+../checker.bash ../hsh ././alias_overwrite.bash
+../checker.bash ../hsh ././alias_several_and_display.bash
+../checker.bash ../hsh ././alias_several.bash
+../checker.bash ../hsh ././alias_several_override.bash
+../checker.bash ../hsh ././alias_specific.bash

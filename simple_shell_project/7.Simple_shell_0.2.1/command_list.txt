@@ -1,2 +1,2 @@
 #####   7.Simple_shell_0.2.1   #####
-./checker.bash ../hsh ././bin_ls.bash
+../checker.bash ../hsh ././bin_ls.bash

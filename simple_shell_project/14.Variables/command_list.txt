@@ -1,9 +1,9 @@
 #####   14.Variables   #####
-./checker.bash ../hsh ././echo_as_var.bash
-./checker.bash ../hsh ././echo_pid.bash
-./checker.bash ../hsh ././echo_pid_fake.bash
-./checker.bash ../hsh ././echo_status.bash
-./checker.bash ../hsh ././echo_status_fail.bash
-./checker.bash ../hsh ././echo_unknown_var.bash
-./checker.bash ../hsh ././echo_var.bash
-./checker.bash ../hsh ././ls_var.bash
+../checker.bash ../hsh ././echo_as_var.bash
+../checker.bash ../hsh ././echo_pid.bash
+../checker.bash ../hsh ././echo_pid_fake.bash
+../checker.bash ../hsh ././echo_status.bash
+../checker.bash ../hsh ././echo_status_fail.bash
+../checker.bash ../hsh ././echo_unknown_var.bash
+../checker.bash ../hsh ././echo_var.bash
+../checker.bash ../hsh ././ls_var.bash
