@@ -8,7 +8,7 @@ if [ -n "$(find . -maxdepth 1 -type f -name '*.bash' ! -name 'checker.bash' ! -n
     for script in ./*.bash; do
         # Exclude specified files from the command list
         if [ "$(basename "$script")" != "checker.bash" ] && [ "$(basename "$script")" != "commandgenerator.bash" ] && [ "$(basename "$script")" != "runchecker.bash" ]; then
-            echo "./checker.bash ../hsh ./$script"
+            echo "../checker.bash ../hsh ./$script"
         fi
     done
 fi > command_list.txt
