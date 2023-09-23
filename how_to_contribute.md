@@ -1,51 +1,7 @@
-# 0x16 ALX SIMPLE SHELL TEST SUITE
+# HOW TO CONTRIBUTE
 
-## DESCRIPTION
-
-- This is a set of testing scripts for all simple shell tasks except betty and memory checks with valgrind.
-- This suite is tested on Ubuntu 20.04 WSL.
-
-## FEATURES
-
-- Runs a checker on your compiled code and displays `OK` if you have the expected output.
-- Displays command to be executed before it starts.
-- Displays number of `OK` outputs at the end and total number of commands run.
-- Check only specific tasks instead of whole suite at once.
-
-*DISCLAIMER: Currently cannot check for valgrind errors so you must do that manually. If you get OK and also no memory leaks then expect GREEN on the Intranet. If you get OK and you have memory errors you will get RED in the intranet.*
-
-## HOW TO USE
-
-#### copy & paste each highlighted command to your terminal and press `enter ↲` one after the other
-
-1. `git clone https://github.com/Fuzzworth/alx_test_suite.git` clone this repo into your simple_shell directory
-2. `mv alx_test_suite/simple_shell_project TEST_SUITE` - Move the simple_shell_project directory to your simple_shell directory, renaming as TEST_SUITE
-3. `cd TEST_SUITE` - Navigate into the TEST_SUITE directory
-4. `chmod +x checker.bash runchecker.bash` - make them executable
-5. `mv runchecker.bash ../runchecker.bash` - move runchecker.bash to your simple_shell directory.
-6. `cd ..` - Navigate back to simple_shell.
-7. `rm -rf alx_test_suite` - Remove the residue files.
-8. Create a `.gitignore` file in your repo if you don't already have one and add these lines inside it
-
-```gitignore
-TEST_SUITES
-allowed_functions
-runchecker.bash
-```
-
-8. `./runchecker.bash` - to run the whole suite from task 1 - 16 at once.
-
---- OPTIONS ---
-
-`./runchecker.bash #`
-
-replace # with a number from 1- 16 to only run checks from a specific task e.g. to check task 3 only, do `./runchecker.bash 3`
-
-## FEEDBACK AND ISSUES
-
-We welcome any feedback, suggestions, or bug reports related to the test cases in this `simple_shell_project` directory. If you encounter any issues or have ideas for improvement, please open an issue on the repository's issue tracker. We appreciate your contributions in making this test cases a valuable resource for students engaged in `0x16. C - Simple Shell`.
-
-## HOW TO CONTRIBUTE
+#### Step 0: Fork the repo (Optional)
+This allows you to work on the project on your own account then after syncing with main repo, you can delete your fork.
 
 #### Step 1: Clone repository
 
@@ -53,29 +9,22 @@ We welcome any feedback, suggestions, or bug reports related to the test cases i
 git clone https://github.com/Fuzzworth/alx_test_suite.git
 ```
 
-then,
-
-```bash
-cd alx_test_suite/simple_shell_project
-```
-
 #### Step 2: Create a local branch
 
 ```bash
-git checkout -b enhancement/<local_branch_name>
+git checkout -b local_branch_name
 ```
 
 or
 
 ```bash
-git branch enhancement/<local_branch_name>
-git checkout enhancement/<local_branch_name>
+git branch local_branch_name
+git checkout local_branch_name
 ```
 
-#### Step 3: Make your updates
+> TIP: *If you forget to create a new branch before starting your code changes, just [read this](https://www.baeldung.com/git-move-uncommitted-work-to-new-branch) before committing on main/master branch.*
 
-> - DO NOT MODIFY ANY OF THE FILES IN THE DIRECTORIES NAMED FROM 1 - 16
-> - DO NOT MODIFY checker.bash
+#### Step 3: Make your updates
 
 #### Step 4: Commit using the below template
 
@@ -145,7 +94,7 @@ Co-authored-by: name <user@users.noreply.github.com>
 #### Step 5: Push your branch
 
 ```bash
-git push --set-upstream origin enhancement/<local_branch_name>
+git push --set-upstream origin local_branch_name
 ```
 
 #### Step 6: Compare and Pull Request to merge your changes to main on this Github repo
@@ -158,5 +107,3 @@ If all is well Approve the request but if it is not Well leave a comment... link
 
 - [Youtube Pull Requests](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
 - [Youtube Review Pull Request](https://www.youtube.com/watch?v=lSnbOtw4izI)
-
-#### LAST UPDATE: 27 MAY 2023
