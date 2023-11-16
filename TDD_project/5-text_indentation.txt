@@ -47,3 +47,7 @@ Line number 1
 <BLANKLINE>
 This is another line
 Once again
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
